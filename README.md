@@ -30,7 +30,11 @@ Python, Pandas, NumPy, Seaborn, Matplotlib, and Jupyter Notebook.
 
 The experience analysis also shows a general decline in job-change intent as experience increases, with some fluctuations. In the cleaning step, `<1` was encoded as 0 and `>20` as 21; these are representative codes for ranges, not exact years. Missing experience values were filled with the median.
 
-These findings describe associations in this dataset; they do not establish cause and effect. Missing values in categorical fields such as `gender`, `enrolled_university`, `education_level`, `major_discipline`, `company_size`, and `company_type` were labeled `Unknown`. `experience` and `last_new_job` were numerically coded and their missing values were filled with their medians. The cleaned file contains no missing values.
+1. **Overall:** 24.9% (4,777 of 19,158) are looking for a job change.
+2. **Relevant experience:** 33.8% without relevant experience vs 21.5% with it (about 1.6x higher).
+3. **Years of experience:** job-change intent falls steadily, from 38.4% (0-2 years) to 15.3% (20+ years).
+4. **University enrollment:** 38.1% of full-time students vs 21.1% of those not enrolled.
+5. **Correlations:** city development index (r = -0.34), training hours (r = -0.02).
 
 ## Charts
 
@@ -46,10 +50,10 @@ These findings describe associations in this dataset; they do not establish caus
 
 ## How to run
 
-1. Keep `aug_train.csv` in the same folder as `hr_project_starter.ipynb`.
-2. Install the notebook dependencies: `pandas`, `numpy`, `seaborn`, and `matplotlib`.
-3. Open `hr_project_starter.ipynb` in Jupyter Notebook and run the cells from top to bottom.
-4. The notebook writes `HR_clean.csv` and saves chart images in the `images/` folder.
+1. Clone the repository or download it as a ZIP.
+2. Install the dependencies: `pip install pandas numpy seaborn matplotlib jupyter`
+3. Open `hr_job_change_analysis.ipynb` in Jupyter Notebook (keep the folder structure as is, since the notebook reads `data/aug_train.csv`).
+4. Run the cells from top to bottom. The notebook creates the cleaned file and the chart images.
 
 ## Files reviewed
 
